@@ -109,6 +109,7 @@ body {
   font-size: 1.2rem;
   margin: 0 0 10px 0;
   line-height: 1.4;
+  text-decoration-none
 }
 
 .post .category {
@@ -395,3 +396,43 @@ body { background: #f9f9f9; margin: 0; font-family: sans-serif; }
 .auth-link, .auth-btn { color: white; text-decoration: none; font-size: 14px; }
 .auth-btn { border: 1px solid white; padding: 5px 15px; border-radius: 20px; }
 .fav-counter { text-decoration: none; color: white; }   
+
+
+
+
+
+
+
+/* Посттардың контейнері */
+.posts-container {
+  display: flex;
+  flex-wrap: wrap; /* Элементтер симаса, келесі жолға түседі */
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Әрбір посттың карточкасы */
+.post-card {
+  width: 30%; /* Компьютерде 3 посттан тұрады */
+  min-width: 300px;
+  border: 1px solid #ddd;
+  padding: 15px;
+}
+
+/* --- Адаптивтілік (Телефондар үшін) --- */
+@media (max-width: 768px) {
+  .post-card {
+    width: 90%; /* Планшетте немесе үлкен телефонда 1 немесе 2 посттан */
+  }
+}
+
+@media (max-width: 480px) {
+  .post-card {
+    width: 100%; /* Кішкентай телефонда пост толық енді алады */
+    padding: 10px;
+  }
+  
+  h1 {
+    font-size: 20px; /* Тақырыптарды кішірейту */
+  }
+}
