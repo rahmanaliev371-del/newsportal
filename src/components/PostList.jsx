@@ -5,7 +5,7 @@ import PostCard from './PostCard';
 
 function PostList() {
   const [news, setNews] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [, setLoading] = useState(true);
   const [searchParams] = useSearchParams();
   const cat = searchParams.get('category') || 'all';
 
