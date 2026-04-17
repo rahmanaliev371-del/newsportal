@@ -1,5 +1,5 @@
 
-import { Routes, Route, useNavigate } from 'react-router-dom';
+import { Routes, Route,  } from 'react-router-dom';
 
 import AuthForm from './components/AuthForm';
 import Header from './components/Header';
@@ -10,7 +10,7 @@ import './Assets/style/style.css';
 
 function App() {
   return (
-    <div>
+    <div> 
       <Header />
       <Routes>
         <Route path="/" element={<PostList />} />
