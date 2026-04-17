@@ -6,7 +6,7 @@ import Header from './components/Header';
 import PostList from './components/PostList';
 import Detail from './components/Detail';
 import Categories from './components/Categories';
-import './Assets/style/style.css';
+import '../src/Assets/style/style.css';
 
 function App() {
   return (

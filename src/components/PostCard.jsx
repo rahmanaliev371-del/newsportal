@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
+import '../Assets/style/style.css';
+
+
 
 function PostCard({ post }) {
   const [isFav, setIsFav] = useState(false);

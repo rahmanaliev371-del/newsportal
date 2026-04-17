@@ -1,4 +1,4 @@
-/* Негізгі баптаулар */
+
 :root {
   --primary-color: #ff6b00; /* Қызғылт сары */
   --bg-color: #f4f7f6;
@@ -109,7 +109,7 @@ body {
   font-size: 1.2rem;
   margin: 0 0 10px 0;
   line-height: 1.4;
-  text-decoration-none
+  text-decoration:none;
 }
 
 .post .category {
@@ -435,4 +435,16 @@ body { background: #f9f9f9; margin: 0; font-family: sans-serif; }
   h1 {
     font-size: 20px; /* Тақырыптарды кішірейту */
   }
+}
+
+
+/* Барлық сілтемелердің астындағы сызықты алып тастау */
+a {
+  text-decoration: none;
+  color: inherit; /* Түсі көк болса, ата-аналық элементтің түсін алсын */
+}
+
+/* Егер тек карточка ішіндегі тақырыптардың сызығын алғыңыз келсе */
+.post-card a {
+  text-decoration: none;
 }
